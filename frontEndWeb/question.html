@@ -24,14 +24,29 @@
 
 <div id="quizContainer" class="container">
 	<div class="title">Start your challenge!</div>
-	<div id="question" class="question">  </div>
-	<label class="option"><input type="radio" name="option" value="1"/> <span id="opt1">  </span></label>
-	<label class="option"><input type="radio" name="option" value="2"/> <span id="opt2">  </span></label>
-	<label class="option"><input type="radio" name="option" value="3"/> <span id="opt3">  </span></label>
-	<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next</button>
+		<div id="question" class="question">  </div>
+			<label class="option"><input type="radio" name="option" value="1"/> <span id="opt1">  </span></label>
+			<label class="option"><input type="radio" name="option" value="2"/> <span id="opt2">  </span></label>
+			<label class="option"><input type="radio" name="option" value="3"/> <span id="opt3">  </span></label>
+			<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next</button>
+			<button id="modalButton" class="modal-btn" onclick="openModal();" style="display: none;">See Explaination</button>
 </div>
-<div id="result" class="quiz result" style="display: none;">
+
+<div id="modal" class="modal">
+	<div class="modal-header">
+		<span id="closeBtn" onclick="closeModal();">&times;</span>
+		<h3>Explaination Header</h3>
+	</div>
+	<div class="modal-body">
+		<p>your answer is correct because....</p>
+	</div>
+	<div class="modal-footer">
+		<h4>Footer</h4>
+	</div>
 </div>
+
+<div id="result" class="quiz result" style="display: none;"></div>
+
 <script src="question.js"></script>
 <script src="quiz-script.js"></script>
 
