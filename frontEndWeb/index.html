@@ -7,10 +7,16 @@
 	<link href="nav.css" rel="stylesheet">
 </head>
 <body>
+	<div class="background-image"></div>
+	<div>
+		<select id="selectedpostcode">
+  			<option value="caulfield">Caulfield 3162</option>
+  			<option value="clayton">Clayton 3168</option>
+		</select>
+	</div>	
 	<div id="main" class="mainContainer">
-		<button id="startbutton" class="start-btn" formaction="question.html">Start Your Challenge!</button>
+		<a href="factors.html"><button id="startbutton" class="start-btn" formaction="factors.html">Challenge Accepted</button></a>
 	</div>
-	<div class="blurred-pic"></div>	
 	<div class="wrapper">
 		<nav>
 			<div class="logo">logo</div>
@@ -21,5 +27,8 @@
 			</ul>
 		</nav>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="index.js"></script>
+
 </body>
 </html>

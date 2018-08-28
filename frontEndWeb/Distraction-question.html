@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Joeys on the road</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+	<link href="question.css" rel="stylesheet">
+	<link href="nav.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<div class="wrapper">
+	<nav>
+		<div class="logo">logo</div>
+		<ul>
+			<li><a href="index.html">Start</a></li>
+			<li><a href="question.html">Challenge!</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div id="quizContainer" class="container">
+	<div class="title"> Do you get distracted? </div>
+		<div id="question" class="question">  </div>
+			<label class="option"><input type="radio" name="option" value="1"/> <span id="opt1">  </span></label>
+			<label class="option"><input type="radio" name="option" value="2"/> <span id="opt2">  </span></label>
+			<label class="option"><input type="radio" name="option" value="3"/> <span id="opt3">  </span></label>
+			<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next</button>
+			<button id="modalButton" class="modal-btn" onclick="openModal();" style="display: none;">See Explaination</button>
+	<footer>
+		<p id="progress">Your challenge progress</p>
+	</footer>
+</div>
+
+<!--
+<div id="modal" class="modal">
+	<div class="modal-header">
+		<span id="closeBtn" onclick="closeModal();">&times;</span>
+		<h3>Explaination Header</h3>
+	</div>
+	<div class="modal-body">
+		<p>your answer is correct because....</p>
+	</div>
+	<div class="modal-footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+-->
+
+
+<div id="result" class="quiz result" style="display: none;"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="question.js"></script>
+<script src="Distraction-question.js"></script>
+
+</body>
+</html>

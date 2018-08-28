@@ -7,21 +7,19 @@ body{
 	height: 330px;
 	width:1000px;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-70%);
 	background: rgba(0,0,0,2);
 	padding: 50px;
-	border: 1px solid #08038C
-	box-shadow:0 0 8px 3px #fff;
+	border: 0px;
 }
 
 .title{
-	padding-top: 20px;
+	padding: 20px;
 	text-align: center;
-	font-size: 36px;
-	text-transform: uppercase;
-	color: #fff
+	font-size: 30px;
+	color: #fff;
 }
 
 .question{
@@ -34,7 +32,7 @@ body{
 }
 
 .option{
-	width: 965px;
+	width: 880px;
 	display:list-item;
 	padding: 10px 0 10px 15px;
 	vertical-align: middle;
@@ -81,6 +79,73 @@ body{
 	background: #000;
 	color:#000;
 }
+
+.modal{
+	display: none;
+	position: fixed;
+	border-radius: 10px;
+	z-index: 1;
+	left: 35%;
+	top: 45%;
+	height: 40%;
+	width: 30%;
+	overflow: auto;
+	background-color: rgba(176,224,230,0.95);
+	text-align: center;
+	animation-name: modalOpen
+}
+
+.modal-btn{
+	border: none;
+	outline: none;
+	background: rgba(255,255,255,0.5);
+	width: 200px;
+	height: 35px;
+	border-radius: 20px;
+	cursor: pointer;
+	float:right;
+	margin: 10px;
+}
+
+.modal-btn:hover{
+	background: #fff;
+	color:#000;
+}
+
+#closeBtn {
+	color: #4682B4;
+	float: all;
+	font-size: 30px;
+}
+
+#closeBtn:hover, .closeBtn:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#progress {
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
