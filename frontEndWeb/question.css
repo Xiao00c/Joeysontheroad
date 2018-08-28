@@ -7,21 +7,19 @@ body{
 	height: 330px;
 	width:1000px;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-70%);
 	background: rgba(0,0,0,2);
 	padding: 50px;
-	border: 1px solid #08038C
-	box-shadow:0 0 8px 3px #fff;
+	border: 0px;
 }
 
 .title{
-	padding-top: 20px;
+	padding: 20px;
 	text-align: center;
-	font-size: 36px;
-	text-transform: uppercase;
-	color: #fff
+	font-size: 30px;
+	color: #fff;
 }
 
 .question{
@@ -34,7 +32,7 @@ body{
 }
 
 .option{
-	width: 965px;
+	width: 880px;
 	display:list-item;
 	padding: 10px 0 10px 15px;
 	vertical-align: middle;
@@ -125,6 +123,28 @@ body{
 	text-decoration: none;
 	cursor: pointer;
 }
+
+#progress {
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
