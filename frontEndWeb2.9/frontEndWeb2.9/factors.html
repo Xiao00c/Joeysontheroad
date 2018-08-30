@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Joeys On the Road</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="nav.css" rel="stylesheet">
+
+	<style>
+		img {
+			width: 430px;
+			height: 290px;
+			border-radius: 4px;
+			cursor: pointer;
+			transition: 0.8s;
+		}
+
+		img:hover {
+			background-size: 110%;
+			filter: blur(4px);
+			filter: brightness(60%);
+		}
+
+		img:after {
+			content: attr(data-text);
+		}
+
+		table {
+			padding: 6%;
+		}
+
+		th {
+			font-size: 2em;
+		}
+
+		td {
+			width: 500px;
+			height: 310px;
+		}
+
+		.content-wrapper {
+			width: 50%;
+			margin:4% 10% 5% 10%;
+		}
+
+		.text-wrapper {
+			width: 100%;
+			position: relative;
+			margin-top: -20%;
+		}
+
+		.text-wrapper h2 {
+			text-align: center;
+			color: #ffffff;			
+		}
+
+	</style>
+</head>
+<body>
+	<table align="center">
+		<tr>
+			<td class="content-wrapper"><a href="Distraction-question.html">
+				<img src="https://images.unsplash.com/photo-1521056329224-c50191a74158?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=96b915f73ee9c4c6139e6d004cdb2a87&auto=format&fit=crop&w=1953&q=80" ></a></td>			
+			<td></td>
+			<td><a href="Fatigue-question.html"> <img src="https://images.unsplash.com/photo-1529487934949-a69b5d68df88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fddaad51a3fe13e8b3f75f1c924d2dc4&auto=format&fit=crop&w=1949&q=80"></a></td>
+		</tr>
+		<tr>
+			<td><a href="Speedy-question.html"> <img src="https://images.unsplash.com/photo-1514588109677-dffc6a536c55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d7f908b88847dbd04bd1aaae4c0e0ab5&auto=format&fit=crop&w=1950&q=80"></a></td>
+			<td><a href="General-question.html"><img src="https://images.unsplash.com/photo-1517564509825-93ed9df91ba6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea70f27635cdeba761df2e19190cfbe9&auto=format&fit=crop&w=1950&q=80"></a></td>
+			<td><a href="Drunk-question.html"> <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ac84274453d0240fd5a88b59c946c292&auto=format&fit=crop&w=1950&q=80"></a></td>
+		</tr>
+	</table>
+	
+	<div class="wrapper">
+	<nav>
+		<div class="logo">logo</div>
+		<ul>
+			<li><a href="index.html">Start</a></li>
+			<li><a href="factors.html">Challenge!</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+	</nav>
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="factors.js"></script>
+</body>
+</html>
