@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Joeys on the road</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+	<link href="question.css" rel="stylesheet">
+	<link href="nav.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<div class="wrapper">
+		<nav>
+			<div class="logo">logo</div>
+			<ul>
+				<li>
+					<a href="index.html">Start</a>
+				</li>
+				<li>
+					<a href="factors.html">Challenge!</a>
+				</li>
+				<li>
+					<a href="about.html">About Us</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="quizContainer" class="container">
+		<div class="title"> the Faster the Cooler? </div>
+		<div id="question" class="question"> </div>
+		<label class="option">
+			<input type="radio" name="option" value="1" />
+			<span id="opt1"> </span>
+		</label>
+		<label class="option">
+			<input type="radio" name="option" value="2" />
+			<span id="opt2"> </span>
+		</label>
+		<label class="option">
+			<input type="radio" name="option" value="3" />
+			<span id="opt3"> </span>
+		</label>
+		<button id="nextButton" class="next-btn" onclick="openModal();">Check Answer</button>
+		<footer>
+			<p id="progress">Your challenge progress</p>
+		</footer>
+	</div>
+
+	<div id="modal" class="modal">
+		<div class="modal-header">
+			<span id="closeBtn" onclick="closeModal();">&times;</span>
+			<h3>Explaination Card</h3>
+		</div>
+		<div class="modal-body">
+			<p id="explainationText">Loading explaination......</p>
+		</div>
+		<div class="modal-footer">
+			<button id="continueBtn" class="continue-btn" onclick="loadNextQuestion();"> Continue to the next one </button>
+		</div>
+	</div>
+
+	<div id="result" class="quiz result" style="display: none;">
+		<button class="backToFactorPageBtn">
+			<a href="factors.html"> Return to the factors page </a>
+		</button>
+		<div id="resultText"></div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="question.js"></script>
+	<script src="Speedy-question.js"></script>
+
+</body>
+
+</html>
